@@ -1,0 +1,87 @@
+{{- define "main" }}
+
+{{- if (and site.Params.profileMode.enabled .IsHome) }}
+  {{- partial "index_profile.html" . }}
+{{- else }} {{/* if not profileMode */}}
+
+  {{- if not .IsHome | and .Title }}
+  <header class="page-header">
+    {{- partial "breadcrumbs.html" . }}
+    <h1>
+      {{ .Title }}
+      {{- if and (or (eq .Kind `term`) (eq .Kind `section`)) (.Param "ShowRssButtonInSectionTermList") }}
+        {{- with .OutputFormats.Get "rss" }}
+        <a href="{{ .RelPermalink }}" title="RSS" aria-label="RSS">
+          <!-- RSS Icon SVG -->
+        </a>
+        {{- end }}
+      {{- end }}
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+      {{ .Description | markdownify }}
+    </div>
+    {{- end }}
+  </header>
+  {{- end }}
+
+  {{- if .Content }}
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+      {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}
+      {{ .Content }}
+    {{- end }}
+  </div>
+  {{- end }}
+
+  {{- $pages := union .RegularPages .Sections }}
+
+  {{- if .IsHome }}
+    {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+    {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
+  {{- end }}
+
+  {{/* ← moved here: only on home, first page */}}
+  {{- if and .IsHome site.Params.homeInfoParams }}
+    {{- partial "home_info.html" . }}
+  {{- end }}
+
+{{- partial "home_search.html" . }}
+
+{{/* ---------------------------------------------------------
+     2) Tabela de Conteúdos dos posts
+-----------------------------------------------------------*/}}
+<div class="toc">
+  <details {{ if (.Param "TocOpen") }} open{{ end }}>
+    <summary accesskey="c" title="(Alt + C)">
+      <span class="details">
+        {{ with site.Params.tocTitle }}
+            {{ . }}
+            {{ else }}
+              {{ i18n "toc" | default "Table of Contents" }}
+    {{ end }}
+      </span>
+    </summary>
+    <div class="inner">
+{{- $pages = sort $pages "Date" "asc" }} 
+    <ul>
+      {{- range $i, $p := $pages }}
+      <li>
+        <a href="{{ $p.RelPermalink }}">
+          {{ add $i 1 }}. {{ $p.Title }}
+        </a>
+        {{- with $p.Params.description }}
+        <span class="post-desc">— {{ . | plainify }}</span>
+        {{- end }}
+      </li>
+      {{- end }}
+    </ul>
+  </div> <!-- /.inner -->
+
+  </details>
+</div> <!-- /.toc -->
+
+{{- end }}{{/* end profileMode */}}
+
+{{- end }}{{/* end main */}}

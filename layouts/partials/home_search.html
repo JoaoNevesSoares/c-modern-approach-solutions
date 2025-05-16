@@ -1,0 +1,15 @@
+{{/* -----------------------------------------------------------------
+     Search box reutilizando a mesma lógica da página /search
+     (o JS de Fuse.js já conhece #searchInput e #searchResults)
+------------------------------------------------------------------ */}}
+<div id="searchbox" class="home-search">
+  <input
+    id="searchInput"
+    placeholder="{{ site.Params.searchPlaceholder | default "Find Exercises ↵ " }}"
+    aria-label="search"
+    type="search"
+    autocomplete="off"
+    maxlength="64"
+  />
+  <ul id="searchResults" aria-label="search results"></ul>
+</div>
