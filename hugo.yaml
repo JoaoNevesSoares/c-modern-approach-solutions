@@ -71,7 +71,7 @@ params:
   #images: ["images/papermod-cover.png"]
 
   homeInfoParams:
-    Image: "http://knking.com/books/c2/images/cover2.jpg"
+    Image: "static/images/cover.jpg"
     Title: "Solutions to C programming a modern approach Second Edition"
     Content: >
       ## Getting Started
