@@ -71,7 +71,7 @@ params:
   #images: ["images/papermod-cover.png"]
 
   homeInfoParams:
-    Image: "static/images/cover.jpg"
+    Image: "images/cover.jpg"
     Title: "Solutions to C programming a modern approach Second Edition"
     Content: >
       ## Getting Started
