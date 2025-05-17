@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://joaonevessoares.github.io/c-modern-approach-solutions/posts/chapter2/</loc>
+    <loc>/posts/chapter2/</loc>
     <lastmod>2025-05-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://joaonevessoares.github.io/c-modern-approach-solutions/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2025-05-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://joaonevessoares.github.io/c-modern-approach-solutions/</loc>
+    <loc>/</loc>
     <lastmod>2025-05-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://joaonevessoares.github.io/c-modern-approach-solutions/tags/first/</loc>
+    <loc>/tags/first/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://joaonevessoares.github.io/c-modern-approach-solutions/posts/post/</loc>
+    <loc>/posts/post/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://joaonevessoares.github.io/c-modern-approach-solutions/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://joaonevessoares.github.io/c-modern-approach-solutions/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>https://joaonevessoares.github.io/c-modern-approach-solutions/search/</loc>
+    <loc>/search/</loc>
   </url><url>
-    <loc>https://joaonevessoares.github.io/c-modern-approach-solutions/series/</loc>
+    <loc>/series/</loc>
   </url>
 </urlset>
