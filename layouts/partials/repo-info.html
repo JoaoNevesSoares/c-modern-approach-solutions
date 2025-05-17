@@ -1,0 +1,29 @@
+{{- $p := site.Params.repo -}}
+{{- if $p.url }}
+  {{- /* extrai "user/repo" a partir da URL */ -}}
+  {{- $repoID := replace $p.url "https://github.com/" "" -}}
+
+  <a class="repo-info"
+     href="{{ $p.url }}"
+     target="_blank"
+     rel="noopener"
+     data-repo="{{ $repoID }}"
+     data-repo-type="{{ $p.type | default "github" }}"
+     title="Ver repositório no GitHub">
+
+    <!-- ícone GitHub -->
+    <svg class="repo-info__icon" width="20" height="20" viewBox="0 0 24 24" …>…</svg>
+
+    <!-- nome do repositório -->
+    <span class="repo-info__name">{{ $p.name }}</span>
+
+    <!-- métricas (– substituídas pelo JS) -->
+    {{- if eq ($p.type | default "github") "github" }}
+    <span class="repo-info__facts">
+      <span data-repo-stars>–</span> ★
+      <span data-repo-forks style="margin-left:.3rem">–</span> ⑂
+    </span>
+    {{- end }}
+
+  </a>
+{{- end }}

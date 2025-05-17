@@ -1,0 +1,13 @@
+.repo-info{
+  display:flex;
+  align-items:center;
+  gap:0.25rem;
+  font-size:.85rem;
+  margin-left:auto;          /* empurra para a extrema direita */
+  white-space:nowrap;
+  opacity:.8;
+  transition:opacity .2s;
+}
+.repo-info:hover{opacity:1}
+.repo-info__icon{flex:none}
+.repo-info__facts{font-variant-numeric:tabular-nums}

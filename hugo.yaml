@@ -1,4 +1,3 @@
-baseURL: "https://joaonevessoares.github.io/c-modern-approach-solutions/"
 title: Solutions 
 copyright: "© [PaperMod Contributors](https://github.com/adityatelange/hugo-PaperMod/graphs/contributors)"
 theme: [PaperMod]
@@ -48,27 +47,15 @@ outputs:
     - JSON
 
 params:
-  # env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  # description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-  # author: Theme PaperMod
-  # # author: ["Me", "You"] # multiple authors
-
-  # defaultTheme: auto
-  # disableThemeToggle: true
-  # ShowShareButtons: true
-  # ShowReadingTime: true
-  # disableSpecial1stPost: true
-  # displayFullLangName: true
-  # ShowPostNavLinks: true
-  # ShowBreadCrumbs: true
+  # enCrumbs: true
   ShowCodeCopyButtons: true
   tocTitle: "List of Exercises by Chapter"
-  # ShowRssButtonInSectionTermList: true
-  # ShowAllPagesInArchive: true
-  # ShowPageNums: true
   ShowToc: true
-  # comments: false
-  #images: ["images/papermod-cover.png"]
+
+  repo: 
+    url: "https://github.com/walkccc/CLRS"
+    name: "solutions"
+    type: "github" 
 
   homeInfoParams:
     Image: "images/cover.jpg"
