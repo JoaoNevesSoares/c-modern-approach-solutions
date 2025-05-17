@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Chapter 2 Exercises | Solutions</title>
 <meta name="keywords" content="">
 <meta name="description" content="Solution to exercises proposed in Chapter 2 of the book">
 <meta name="author" content="João Antonio">
-<link rel="canonical" href="//localhost:1313/posts/chapter2/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.6ec3a57284aa3cc6e4fd337ffe84166231c6388693427f2bbe44a2b39410c7a2.css" integrity="sha256-bsOlcoSqPMbk/TN//oQWYjHGOIaTQn8rvkSis5QQx6I=" rel="preload stylesheet" as="style">
-<link rel="icon" href="//localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<link rel="canonical" href="/posts/chapter2/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.cbf778875b2520c1130b25f85652936aeaf33fe5f0a6c90ff9a2abeba292e86a.css" integrity="sha256-y/d4h1slIMETCyX4VlKTaurzP&#43;XwpskP&#43;aKr66KS6Go=" rel="preload stylesheet" as="style">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="//localhost:1313/posts/chapter2/">
+<link rel="alternate" hreflang="en" href="/posts/chapter2/">
 <noscript>
     <style>
         #theme-toggle,
@@ -55,7 +55,73 @@
         }
 
     </style>
-</noscript>
+</noscript><meta property="og:url" content="/posts/chapter2/">
+  <meta property="og:site_name" content="Solutions">
+  <meta property="og:title" content="Chapter 2 Exercises">
+  <meta property="og:description" content="Solution to exercises proposed in Chapter 2 of the book">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-05-12T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-05-12T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 2 Exercises">
+<meta name="twitter:description" content="Solution to exercises proposed in Chapter 2 of the book">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "/posts/"
+    }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Chapter 2 Exercises",
+      "item": "/posts/chapter2/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Chapter 2 Exercises",
+  "name": "Chapter 2 Exercises",
+  "description": "Solution to exercises proposed in Chapter 2 of the book",
+  "keywords": [
+    
+  ],
+  "articleBody": " Create and run Kernighan and Ritchie’s famous “hello, world” program: #include int main(void) { printf(\"hello, world\\n\"); } Do you get a warning message from the compiler? If so, what’s needed to make it go away?\nANS:\nTo reproduce this exercise you need create a new file and name it with .c extension. In the same directory the file is, you compile the program with gcc (if using GNU linux, or find the compiler available for your system.) open the terminal emulator and run the following line to compile the program: gcc hello.c, to execute run: ./a.out. Author’s asks about if we gat some warning message from the compiler, this is because in some older compilers, left the main function without a return statement make throw a warning. As using modern compilers such Clang, there’s no warning message, as long as main has iint as its return type.\nAccording to the C standard (since C99):\nIf control reaches the end of main() without a return statement, the effect is as if return 0; had been executed.\nIn some older compilers there’s a warning that appears when running the program without the return statement.\n",
+  "wordCount" : "193",
+  "inLanguage": "en",
+  "datePublished": "2025-05-12T00:00:00Z",
+  "dateModified": "2025-05-12T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "João Antonio"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/posts/chapter2/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Solutions",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -73,7 +139,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="//localhost:1313/" accesskey="h" title="Solutions (Alt + H)">Solutions</a>
+            <a href="/" accesskey="h" title="Solutions (Alt + H)">Solutions</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -99,17 +165,17 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="//localhost:1313/archives" title="Archive">
+                <a href="/archives" title="Archive">
                     <span>Archive</span>
                 </a>
             </li>
             <li>
-                <a href="//localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
             <li>
-                <a href="//localhost:1313/tags/" title="Tags">
+                <a href="/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
