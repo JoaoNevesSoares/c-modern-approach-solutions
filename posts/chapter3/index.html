@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Chapter III Solutions | Solutions</title>
+<meta name="keywords" content="">
+<meta name="description" content="Solution to exercises proposed in Chapter 3">
+<meta name="author" content="João Antonio">
+<link rel="canonical" href="https://joaonevessoares.github.io/c-modern-approach-solutions/posts/chapter3/">
+<link crossorigin="anonymous" href="/c-modern-approach-solutions/assets/css/stylesheet.cbf778875b2520c1130b25f85652936aeaf33fe5f0a6c90ff9a2abeba292e86a.css" integrity="sha256-y/d4h1slIMETCyX4VlKTaurzP&#43;XwpskP&#43;aKr66KS6Go=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://joaonevessoares.github.io/c-modern-approach-solutions/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://joaonevessoares.github.io/c-modern-approach-solutions/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://joaonevessoares.github.io/c-modern-approach-solutions/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://joaonevessoares.github.io/c-modern-approach-solutions/apple-touch-icon.png">
+<link rel="mask-icon" href="https://joaonevessoares.github.io/c-modern-approach-solutions/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://joaonevessoares.github.io/c-modern-approach-solutions/posts/chapter3/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://joaonevessoares.github.io/c-modern-approach-solutions/posts/chapter3/">
+  <meta property="og:site_name" content="Solutions">
+  <meta property="og:title" content="Chapter III Solutions">
+  <meta property="og:description" content="Solution to exercises proposed in Chapter 3">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-05-28T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-05-28T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter III Solutions">
+<meta name="twitter:description" content="Solution to exercises proposed in Chapter 3">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://joaonevessoares.github.io/c-modern-approach-solutions/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Chapter III Solutions",
+      "item": "https://joaonevessoares.github.io/c-modern-approach-solutions/posts/chapter3/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Chapter III Solutions",
+  "name": "Chapter III Solutions",
+  "description": "Solution to exercises proposed in Chapter 3",
+  "keywords": [
+    
+  ],
+  "articleBody": "Chapter 3 1. What output do the following calls of printf produce?\n(a) printf(\"%6d,%4d\", 86, 1040); (b) printf(\"%12.5e\", 30.253); (c) printf(\"%.4f\", 83.162); (d) printf(\"%-6.2g\", .0000009979);\nSolution: (a) The first one will output 86 with 4 trailing spaces the second will display only 1040. (b) 3.02530e+01 (c) 83.1620 (d) 1.0e-06\n2. Write calls of printf that display a float variable x in the following formats.\n(a) Exponential notation; left-justified in a field of size 8; one digit after the decimal point. (b) Exponential notation; right-justified in a field of size 10; six digits after the decimal point. (c) Fixed decimal notation; left-justified in a field of size 8; three digits after the decimal point. (d) Fixed decimal notation; right-justified in a field of size 6; no digits after the decimal point.\nSolution:\nUsing PI as float constant for exemplification (a)\nprintf(\"%-8.1e\\n\", M_PI); (b)\nprintf(\"%10.6e\\n\", M_PI); (c)\nprintf(\"%-8.3f\\n\", M_PI); (d)\nprintf(\"%6.0f\\n\",M_PI); 3. For each of the following pairs of scanf format strings, indicate whether or not the two strings are equivalent. If they’re not, show how they can be distinguished. (a) \"%d\" versus \" %d\" (b) \"%d-%d-%d\" versus \"%d -%d -%d\" (c) \"%f\" versus \"%f \" (d) \"%f,%f\" versus \"%f, %f\"\nSolution: (a) both are equivalent (b) both are equivalent (c) both are equivalent (d) they not equivalent\n4. Suppose that we call scanf as follows: scanf(\"%d%f%d\", \u0026i, \u0026x, \u0026j); If the user enters 10.3 5 6 what will be the values of i, x, and j after the call? (Assume that i and j are int variables and x is a float variable.)\nSolution: 10, 0.3, 5\nReason: the first %d reads 10.3 and drops the fractional part, the upcoming %f reads the .3 value, and the last %d reads 5 and the value 6 is ignored by the scanf.\n5. Suppose that we call scanf as follows: scanf(\"%f%d%f\", \u0026x, \u0026i, \u0026y); If the user enters 12.3 45.6 789 what will be the values of x, i, and y after the call? (Assume that x and y are float variables and i is an int variable.)\nSolution: 12.3, 45, 0.6\n6. Show how to modify the addfrac.c program of Section 3.2 so that the user is allowed to enter fractions that contain spaces before and after each / character.\naddfrac.c:\n#include int main(void) { int num1, denom1, num2, denom2, result_num, result_denom; printf(\"Enter first fraction: \"); scanf(\"%d/%d\", \u0026num1, \u0026denom1); printf(\"Enter second fraction: \"); scanf(\"%d/%d\", \u0026num2, \u0026denom2); result_num = num1 * denom2 + num2 * denom1; result_denom = denom1 * denom2; printf(\"The sum is %d/%d\\n\", result_num, result_denom); return 0; } Solution:\n#include int main(void) { int num1, denom1, num2, denom2, result_num, result_denom; printf(\"Enter first fraction: \"); scanf(\"%d / %d\", \u0026num1, \u0026denom1); printf(\"Enter second fraction: \"); scanf(\"%d / %d\", \u0026num2, \u0026denom2); result_num = num1 * denom2 + num2 * denom1; result_denom = denom1 * denom2; printf(\"The sum is %d/%d\\n\", result_num, result_denom); return 0; } Programming Projects 1. Write a program that accepts a date from the user in the form mm/dd/yyyy and then displays it in the form yyyymmdd: Enter a date (mm/dd/yyyy): 2/17/2011 You entered the date 20110217\nSolution:\n#include int main(void) { int dd,yyy,mm; scanf(\"%d/%d/%d\",\u0026mm,\u0026dd,\u0026yyy); printf(\"You entered the date %04d%02d%02d\\n\",yyy,mm,dd); return 0; } 2. Write a program that formats product information entered by the user. A session with the program should look like this:\nEnter item number: 583 Enter unit price: 13.5 Enter purchase date (mm/dd/yyyy): 10/24/2010 output:\nItem Unit Price Purchase Date 583 $ 13.50 10/24/2010 Solution:\n#include int main(void) { int it, mm, dd, yyyy; float price; printf(\"Enter a item number: \"); scanf(\"%d\", \u0026it); printf(\"Enter unit price: \"); scanf(\"%f\", \u0026price); printf(\"Enter purchase date (mm/dd/yyyy): \"); scanf(\"%d/%d/%d\",\u0026mm,\u0026dd,\u0026yyyy); printf(\"Item\\tUnit Price\\tPurchase Date\\n%d\\t$ %.2f \\t\\t %d/%d/%d\\n\",it,price, mm,dd,yyyy); return 0; } 3. Books are identified by an International Standard Book Number (ISBN). ISBNs assigned after January 1, 2007 contain 13 digits, arranged in five groups, such as 978-0-393-97950-3. (Older ISBNs use 10 digits.) The first group (the GS1 prefix) is currently either 978 or 979. The group identifier specifies the language or country of origin (for example, 0 and 1 are used in English-speaking countries). The publisher code identifies the publisher (393 is the code for W. W. Norton). The item number is assigned by the publisher to identify a specific book (97950 is the code for this book). An ISBN ends with a check digit that’s used to verify the accuracy of the preceding digits. Write a program that breaks down an ISBN entered by the user:\nEnter ISBN: 978-0-393-97950-3 GS1 prefix: 978 Group identifier: 0 Publisher code: 393 Item number: 97950 Check digit: 3 Note: The number of digits in each group may vary; you can’t assume that groups have the lengths shown in this example. Test your program with actual ISBN values (usually found on the back cover of a book and on the copyright page).\nSolution:\n#include int main(void) { int gs1, gi, pc, in, cd; printf(\"Enter ISBN: \"); scanf(\"%d-%d-%d-%d-%d\", \u0026gs1, \u0026gi,\u0026pc, \u0026in, \u0026cd); printf(\"GS1 prefix: %d\\n\", gs1); printf(\"Group identifier: %d\\n\", gi); printf(\"Publisher code: %d\\n\", pc); printf(\"Item number: %d\\n\",in); printf(\"Check digit: %d\\n\",cd); return 0; } 4. Write a program that prompts the user to enter a telephone number in the form (xxx) xxx- xxxx and then displays the number in the form xxx.xxx.xxx:\nEnter phone number [(xxx) xxx-xxxx]: (404) 817-6900 You entered 404.817.6900 Solution:\n#include int main(void) { int prefix, num, posfix; printf(\"Enter a phone number [(xxx) xxx-xxxx]: \"); scanf(\"(%d) %d-%d\",\u0026prefix, \u0026num,\u0026posfix); printf(\"%d.%d.%d\\n\", prefix,num,posfix); return 0; } 5. Write a program that asks the user to enter the numbers from 1 to 16 (in any order) and then displays the numbers in a 4 by 4 arrangement, followed by the sums of the rows, columns, and diagonals:\nEnter the numbers from 1 to 16 in any order 16 3 2 13 5 10 11 8 9 6 7 12 4 15 14 1 16 3 2 13 5 10 11 8 9 6 7 12 4 15 14 1 Rows sums: 34 34 34 34 Column sums: 34 34 34 34 Diagonal sums: 34 34 If the row, column, and diagonal sums are all the same (as they are in this example), the numbers are said to form a magic square. The magic square shown here appears in a 1514 engraving by artist and mathematician [[Albrecht Dürer]]. (Note that the middle numbers in the last row give the date of the engraving.)\nSolutions:\n#include int main(void) { int n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12, n13, n14, n15, n16; printf(\"Enter the numbers from 1 to 16 in any order: \"); scanf(\"%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d\", \u0026n1, \u0026n2, \u0026n3, \u0026n4, \u0026n5, \u0026n6, \u0026n7, \u0026n8, \u0026n9, \u0026n10, \u0026n11, \u0026n12, \u0026n13, \u0026n14, \u0026n15, \u0026n16); printf(\"%2d %2d %2d %2d\\n\",n1,n2,n3,n4); printf(\"%2d %2d %2d %2d\\n\",n5,n6,n7,n8); printf(\"%2d %2d %2d %2d\\n\",n9,n10,n11,n12); printf(\"%2d %2d %2d %2d\\n\",n13,n14,n15,n16); printf(\"Rows sums: %d %d %d %d\\n\",n1+n2+n3+n4,n5+n6+n7+n8,n9+n10+n11+n12,n13+n14+n15+n16); printf(\"Column sums: %d %d %d %d\\n\",n1+n5+n9+n13,n2+n6+n10+n14,n3+n7+n11+n15,n4+n8+n12+n16); printf(\"Diagonal sums: %d %d\\n\",n1+n6+n11+n16,n4+n7+n10+n13); return 0; } 6. Modify the addfrac.c program of Section 3.2 so that the user enters both fractions at the same time, separated by a plus sign:\nEnter two fractions separated by a plus sign: 5/6+3/4 The sum is 38/24 addfrac.c:\n#include int main(void) { int num1, denom1, num2, denom2, result_num, result_denom; printf(\"Enter first fraction: \"); scanf(\"%d/%d\", \u0026num1, \u0026denom1); printf(\"Enter second fraction: \"); scanf(\"%d/%d\", \u0026num2, \u0026denom2); result_num = num1 * denom2 + num2 * denom1; result_denom = denom1 * denom2; printf(\"The sum is %d/%d\\n\", result_num, result_denom); return 0; } Solution:\n#include int main(void) { int num1, denom1, num2, denom2, result_num, result_denom; printf(\"Enter two fractions separated by a plus sign: \"); scanf(\"%d/%d+%d/%d\", \u0026num1, \u0026denom1, \u0026num2, \u0026denom2); result_num = num1 * denom2 + num2 * denom1; result_denom = denom1 * denom2; printf(\"The sum is %d/%d\\n\", result_num, result_denom); return 0; } ",
+  "wordCount" : "1305",
+  "inLanguage": "en",
+  "datePublished": "2025-05-28T00:00:00Z",
+  "dateModified": "2025-05-28T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "João Antonio"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://joaonevessoares.github.io/c-modern-approach-solutions/posts/chapter3/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Solutions",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://joaonevessoares.github.io/c-modern-approach-solutions/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://joaonevessoares.github.io/c-modern-approach-solutions/" accesskey="h" title="Solutions (Alt + H)">Solutions</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://joaonevessoares.github.io/c-modern-approach-solutions/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://joaonevessoares.github.io/c-modern-approach-solutions/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://joaonevessoares.github.io/c-modern-approach-solutions/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/adityatelange/hugo-PaperMod/wiki/" title="WiKi">
+                    <span>WiKi</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+            <a class="repo-info"
+     href="https://github.com/walkccc/CLRS"
+     target="_blank"
+     rel="noopener"
+     data-repo="walkccc/CLRS"
+     data-repo-type="github"
+     title="Ver repositório no GitHub">
+
+    
+    <svg class="repo-info__icon" width="20" height="20" viewBox="0 0 24 24" …>…</svg>
+
+    
+    <span class="repo-info__name">solutions</span>
+
+    
+    <span class="repo-info__facts">
+      <span data-repo-stars>–</span> ★
+      <span data-repo-forks style="margin-left:.3rem">–</span> ⑂
+    </span>
+
+  </a>
+
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Chapter III Solutions
+    </h1>
+    <div class="post-description">
+      Solution to exercises proposed in Chapter 3
+    </div>
+    <div class="post-meta"><span title='2025-05-28 00:00:00 +0000 UTC'>May 28, 2025</span>&nbsp;·&nbsp;João Antonio
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#chapter-3" aria-label="Chapter 3">Chapter 3</a><ul>
+                        
+                <li>
+                    <a href="#programming-projects" aria-label="Programming Projects">Programming Projects</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="chapter-3">Chapter 3<a hidden class="anchor" aria-hidden="true" href="#chapter-3">#</a></h1>
+<p><strong>1</strong>. What output do the following calls of printf produce?</p>
+<p>(a) printf(&quot;%6d,%4d&quot;, 86, 1040);
+(b) printf(&quot;%12.5e&quot;, 30.253);
+(c) printf(&quot;%.4f&quot;, 83.162);
+(d) printf(&quot;%-6.2g&quot;, .0000009979);</p>
+<p><strong>Solution</strong>:
+(a) The first one will output 86 with 4 trailing spaces the second will display only 1040.
+(b) 3.02530e+01
+(c) 83.1620
+(d) 1.0e-06</p>
+<hr>
+<p><strong>2</strong>. Write calls of printf that display a float variable x in the following formats.</p>
+<p>(a) Exponential notation; left-justified in a field of size 8; one digit after the decimal point.
+(b) Exponential notation; right-justified in a field of size 10; six digits after the decimal point.
+(c) Fixed decimal notation; left-justified in a field of size 8; three digits after the decimal point.
+(d) Fixed decimal notation; right-justified in a field of size 6; no digits after the decimal point.</p>
+<p><strong>Solution</strong>:</p>
+<p><strong>Using PI as float constant for exemplification</strong>
+(a)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%-8.1e</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">M_PI</span><span class="p">);</span>
+</span></span></code></pre></div><p>(b)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%10.6e</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">M_PI</span><span class="p">);</span>
+</span></span></code></pre></div><p>(c)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%-8.3f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">M_PI</span><span class="p">);</span>
+</span></span></code></pre></div><p>(d)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%6.0f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">M_PI</span><span class="p">);</span>
+</span></span></code></pre></div><hr>
+<p><strong>3</strong>. For each of the following pairs of scanf format strings, indicate whether or not the two strings are equivalent. If they’re not, show how they can be distinguished.
+(a) <code>&quot;%d&quot; versus &quot; %d&quot;</code>
+(b) <code>&quot;%d-%d-%d&quot; versus &quot;%d -%d -%d&quot;</code>
+(c) <code>&quot;%f&quot; versus &quot;%f &quot;</code>
+(d) <code>&quot;%f,%f&quot; versus &quot;%f, %f&quot;</code></p>
+<p><strong>Solution</strong>:
+(a) both are equivalent
+(b) both are equivalent
+(c) both are equivalent
+(d) they not equivalent</p>
+<hr>
+<p><strong>4</strong>. Suppose that we call scanf as follows: <code>scanf(&quot;%d%f%d&quot;, &amp;i, &amp;x, &amp;j);</code>  If the user enters <code>10.3 5 6</code> what will be the values of i, x, and j after the call? (Assume that i and j are int variables and x is a float variable.)</p>
+<p><strong>Solution</strong>:
+10, 0.3, 5</p>
+<p>Reason: the first <code>%d</code> reads 10.3 and drops the fractional part, the upcoming <code>%f</code> reads the .3 value, and the last <code>%d</code> reads 5 and the value 6 is ignored by the scanf.</p>
+<hr>
+<p><strong>5</strong>. Suppose that we call scanf as follows: scanf(&quot;%f%d%f&quot;, &amp;x, &amp;i, &amp;y); If the user enters 12.3 45.6 789 what will be the values of x, i, and y after the call? (Assume that x and y are float variables and i is an int variable.)</p>
+<p><strong>Solution</strong>:
+12.3, 45, 0.6</p>
+<hr>
+<p><strong>6</strong>. Show how to modify the addfrac.c program of Section 3.2 so that the user is allowed to enter fractions that contain spaces before and after each / character.</p>
+<p><em>addfrac.c</em>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">num1</span><span class="p">,</span> <span class="n">denom1</span><span class="p">,</span> <span class="n">num2</span><span class="p">,</span> <span class="n">denom2</span><span class="p">,</span> <span class="n">result_num</span><span class="p">,</span> <span class="n">result_denom</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Enter first fraction: &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%d/%d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">num1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">denom1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Enter second fraction: &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%d/%d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">num2</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">denom2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="n">result_num</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">*</span> <span class="n">denom2</span> <span class="o">+</span> <span class="n">num2</span> <span class="o">*</span> <span class="n">denom1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">result_denom</span> <span class="o">=</span> <span class="n">denom1</span> <span class="o">*</span> <span class="n">denom2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;The sum is %d/%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">result_num</span><span class="p">,</span> <span class="n">result_denom</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p><strong>Solution</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">num1</span><span class="p">,</span> <span class="n">denom1</span><span class="p">,</span> <span class="n">num2</span><span class="p">,</span> <span class="n">denom2</span><span class="p">,</span> <span class="n">result_num</span><span class="p">,</span> <span class="n">result_denom</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Enter first fraction: &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%d / %d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">num1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">denom1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Enter second fraction: &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%d / %d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">num2</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">denom2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="n">result_num</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">*</span> <span class="n">denom2</span> <span class="o">+</span> <span class="n">num2</span> <span class="o">*</span> <span class="n">denom1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">result_denom</span> <span class="o">=</span> <span class="n">denom1</span> <span class="o">*</span> <span class="n">denom2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;The sum is %d/%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">result_num</span><span class="p">,</span> <span class="n">result_denom</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><hr>
+<h2 id="programming-projects">Programming Projects<a hidden class="anchor" aria-hidden="true" href="#programming-projects">#</a></h2>
+<p><strong>1</strong>. Write a program that accepts a date from the user in the form <em>mm/dd/yyyy</em> and then displays it in the form <em>yyyymmdd</em>:
+<code>Enter a date (mm/dd/yyyy): 2/17/2011</code>
+<code>You entered the date 20110217</code></p>
+<p><strong>Solution</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">dd</span><span class="p">,</span><span class="n">yyy</span><span class="p">,</span><span class="n">mm</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%d/%d/%d&#34;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">mm</span><span class="p">,</span><span class="o">&amp;</span><span class="n">dd</span><span class="p">,</span><span class="o">&amp;</span><span class="n">yyy</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;You entered the date %04d%02d%02d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">yyy</span><span class="p">,</span><span class="n">mm</span><span class="p">,</span><span class="n">dd</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><hr>
+<p><strong>2</strong>. Write a program that formats product information entered by the user. A session with the program should look like this:</p>
+<p><code>Enter item number: 583</code>
+<code>Enter unit price: 13.5</code>
+<code>Enter purchase date (mm/dd/yyyy): 10/24/2010</code>
+output:</p>
+<pre tabindex="0"><code>Item            Unit Price Purchase Date
+583             $ 13.50    10/24/2010
+</code></pre><p><strong>Solution</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">it</span><span class="p">,</span> <span class="n">mm</span><span class="p">,</span> <span class="n">dd</span><span class="p">,</span> <span class="n">yyyy</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">float</span> <span class="n">price</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Enter a item number: &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">it</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Enter unit price: &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%f&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">price</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Enter purchase date (mm/dd/yyyy): &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%d/%d/%d&#34;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">mm</span><span class="p">,</span><span class="o">&amp;</span><span class="n">dd</span><span class="p">,</span><span class="o">&amp;</span><span class="n">yyyy</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Item</span><span class="se">\t</span><span class="s">Unit Price</span><span class="se">\t</span><span class="s">Purchase Date</span><span class="se">\n</span><span class="s">%d</span><span class="se">\t</span><span class="s">$ %.2f </span><span class="se">\t\t</span><span class="s"> %d/%d/%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">it</span><span class="p">,</span><span class="n">price</span><span class="p">,</span> <span class="n">mm</span><span class="p">,</span><span class="n">dd</span><span class="p">,</span><span class="n">yyyy</span><span class="p">);</span> 
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><hr>
+<p><strong>3</strong>. Books are identified by an International Standard Book Number (ISBN). ISBNs assigned after January 1, 2007 contain 13 digits, arranged in five groups, such as 978-0-393-97950-3. (Older ISBNs use 10 digits.) The first group (the GS1 prefix) is currently either 978 or 979. The group identifier specifies the language or country of origin (for example, 0 and 1 are used in English-speaking countries). The publisher code identifies the publisher (393 is the code for W. W. Norton). The item number is assigned by the publisher to identify a specific book (97950 is the code for this book). An ISBN ends with a check digit that’s used to verify the accuracy of the preceding digits. Write a program that breaks down an ISBN entered by the user:</p>
+<pre tabindex="0"><code>Enter ISBN: 978-0-393-97950-3
+GS1 prefix: 978
+Group identifier: 0
+Publisher code: 393
+Item number: 97950
+Check digit: 3
+</code></pre><p>Note: The number of digits in each group may vary; you can’t assume that groups have the lengths shown in this example. Test your program with actual ISBN values (usually found on the back cover of a book and on the copyright page).</p>
+<p><strong>Solution</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">gs1</span><span class="p">,</span> <span class="n">gi</span><span class="p">,</span> <span class="n">pc</span><span class="p">,</span> <span class="n">in</span><span class="p">,</span> <span class="n">cd</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Enter ISBN: &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%d-%d-%d-%d-%d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">gs1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">gi</span><span class="p">,</span><span class="o">&amp;</span><span class="n">pc</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">in</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">cd</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;GS1 prefix: %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">gs1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Group identifier: %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">gi</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Publisher code: %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">pc</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Item number: %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">in</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Check digit: %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">cd</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><hr>
+<p><strong>4</strong>. Write a program that prompts the user to enter a telephone number in the form (xxx) xxx- xxxx and then displays the number in the form xxx.xxx.xxx:</p>
+<pre tabindex="0"><code>Enter phone number [(xxx) xxx-xxxx]: (404) 817-6900
+You entered 404.817.6900
+</code></pre><p><strong>Solution</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">prefix</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="n">posfix</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Enter a phone number [(xxx) xxx-xxxx]: &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;(%d) %d-%d&#34;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">prefix</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">num</span><span class="p">,</span><span class="o">&amp;</span><span class="n">posfix</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%d.%d.%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">prefix</span><span class="p">,</span><span class="n">num</span><span class="p">,</span><span class="n">posfix</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><hr>
+<p><strong>5</strong>. Write a program that asks the user to enter the numbers from 1 to 16 (in any order) and then displays the numbers in a 4 by 4 arrangement, followed by the sums of the rows, columns, and diagonals:</p>
+<pre tabindex="0"><code>Enter the numbers from 1 to 16 in any order 16 3 2 13 5 10 11 8 9 6 7 12 4 15 14 1
+16  3  2 13
+ 5 10 11  8
+ 9  6  7 12
+ 4 15 14  1
+Rows sums: 34  34  34  34
+Column sums: 34  34  34  34
+Diagonal sums: 34  34
+</code></pre><p>If the row, column, and diagonal sums are all the same (as they are in this example), the numbers are said to form a <strong>magic square</strong>. The magic square shown here appears in a 1514 engraving by artist and mathematician [[Albrecht Dürer]]. (Note that the middle numbers in the last row give the date of the engraving.)</p>
+<p><strong>Solutions</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kt">int</span> <span class="n">n1</span><span class="p">,</span> <span class="n">n2</span><span class="p">,</span> <span class="n">n3</span><span class="p">,</span> <span class="n">n4</span><span class="p">,</span> <span class="n">n5</span><span class="p">,</span> <span class="n">n6</span><span class="p">,</span> <span class="n">n7</span><span class="p">,</span> <span class="n">n8</span><span class="p">,</span> <span class="n">n9</span><span class="p">,</span> <span class="n">n10</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="n">n11</span><span class="p">,</span> <span class="n">n12</span><span class="p">,</span> <span class="n">n13</span><span class="p">,</span> <span class="n">n14</span><span class="p">,</span> <span class="n">n15</span><span class="p">,</span> <span class="n">n16</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Enter the numbers from 1 to 16 in any order: &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">        <span class="o">&amp;</span><span class="n">n1</span><span class="p">,</span>  <span class="o">&amp;</span><span class="n">n2</span><span class="p">,</span>  <span class="o">&amp;</span><span class="n">n3</span><span class="p">,</span>  <span class="o">&amp;</span><span class="n">n4</span><span class="p">,</span>  <span class="o">&amp;</span><span class="n">n5</span><span class="p">,</span>  <span class="o">&amp;</span><span class="n">n6</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n7</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n8</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n9</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n10</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="o">&amp;</span><span class="n">n11</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n12</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n13</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n14</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n15</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n16</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%2d %2d %2d %2d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">n1</span><span class="p">,</span><span class="n">n2</span><span class="p">,</span><span class="n">n3</span><span class="p">,</span><span class="n">n4</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%2d %2d %2d %2d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">n5</span><span class="p">,</span><span class="n">n6</span><span class="p">,</span><span class="n">n7</span><span class="p">,</span><span class="n">n8</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%2d %2d %2d %2d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">n9</span><span class="p">,</span><span class="n">n10</span><span class="p">,</span><span class="n">n11</span><span class="p">,</span><span class="n">n12</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%2d %2d %2d %2d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">n13</span><span class="p">,</span><span class="n">n14</span><span class="p">,</span><span class="n">n15</span><span class="p">,</span><span class="n">n16</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Rows sums: %d  %d  %d  %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">n1</span><span class="o">+</span><span class="n">n2</span><span class="o">+</span><span class="n">n3</span><span class="o">+</span><span class="n">n4</span><span class="p">,</span><span class="n">n5</span><span class="o">+</span><span class="n">n6</span><span class="o">+</span><span class="n">n7</span><span class="o">+</span><span class="n">n8</span><span class="p">,</span><span class="n">n9</span><span class="o">+</span><span class="n">n10</span><span class="o">+</span><span class="n">n11</span><span class="o">+</span><span class="n">n12</span><span class="p">,</span><span class="n">n13</span><span class="o">+</span><span class="n">n14</span><span class="o">+</span><span class="n">n15</span><span class="o">+</span><span class="n">n16</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Column sums: %d  %d  %d  %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">n1</span><span class="o">+</span><span class="n">n5</span><span class="o">+</span><span class="n">n9</span><span class="o">+</span><span class="n">n13</span><span class="p">,</span><span class="n">n2</span><span class="o">+</span><span class="n">n6</span><span class="o">+</span><span class="n">n10</span><span class="o">+</span><span class="n">n14</span><span class="p">,</span><span class="n">n3</span><span class="o">+</span><span class="n">n7</span><span class="o">+</span><span class="n">n11</span><span class="o">+</span><span class="n">n15</span><span class="p">,</span><span class="n">n4</span><span class="o">+</span><span class="n">n8</span><span class="o">+</span><span class="n">n12</span><span class="o">+</span><span class="n">n16</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Diagonal sums: %d  %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">n1</span><span class="o">+</span><span class="n">n6</span><span class="o">+</span><span class="n">n11</span><span class="o">+</span><span class="n">n16</span><span class="p">,</span><span class="n">n4</span><span class="o">+</span><span class="n">n7</span><span class="o">+</span><span class="n">n10</span><span class="o">+</span><span class="n">n13</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><hr>
+<p><strong>6</strong>. Modify the <code>addfrac.c</code> program of Section 3.2 so that the user enters both fractions at the same time, separated by a plus sign:</p>
+<pre tabindex="0"><code>Enter two fractions separated by a plus sign: 5/6+3/4
+The sum is 38/24
+</code></pre><p>addfrac.c:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">num1</span><span class="p">,</span> <span class="n">denom1</span><span class="p">,</span> <span class="n">num2</span><span class="p">,</span> <span class="n">denom2</span><span class="p">,</span> <span class="n">result_num</span><span class="p">,</span> <span class="n">result_denom</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Enter first fraction: &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%d/%d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">num1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">denom1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Enter second fraction: &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%d/%d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">num2</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">denom2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="n">result_num</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">*</span> <span class="n">denom2</span> <span class="o">+</span> <span class="n">num2</span> <span class="o">*</span> <span class="n">denom1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">result_denom</span> <span class="o">=</span> <span class="n">denom1</span> <span class="o">*</span> <span class="n">denom2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;The sum is %d/%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">result_num</span><span class="p">,</span> <span class="n">result_denom</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p><strong>Solution</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">num1</span><span class="p">,</span> <span class="n">denom1</span><span class="p">,</span> <span class="n">num2</span><span class="p">,</span> <span class="n">denom2</span><span class="p">,</span> <span class="n">result_num</span><span class="p">,</span> <span class="n">result_denom</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Enter two fractions separated by a plus sign: &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%d/%d+%d/%d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">num1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">denom1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">num2</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">denom2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="n">result_num</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">*</span> <span class="n">denom2</span> <span class="o">+</span> <span class="n">num2</span> <span class="o">*</span> <span class="n">denom1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">result_denom</span> <span class="o">=</span> <span class="n">denom1</span> <span class="o">*</span> <span class="n">denom2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;The sum is %d/%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">result_num</span><span class="p">,</span> <span class="n">result_denom</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+<script src="js/repo-info.js" defer></script>
+        <span>© <a href="https://github.com/adityatelange/hugo-PaperMod/graphs/contributors">PaperMod Contributors</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+      <div class="social-icons" align="right">
+    <a href="https://github.com/adityatelange/hugo-PaperMod" target="_blank" rel="noopener noreferrer me"
+        title="View Source on Github">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+    </a>
+    <a href="https://discord.gg/ahpmTvhVmp" target="_blank" rel="noopener noreferrer me"
+        title="Join Discord Community">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36" fill="currentColor" stroke="none" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z" />
+</svg>
+    </a>
+    <a href="https://x.com/intent/tweet/?text=Checkout%20Hugo%20PaperMod%20%E2%9C%A8%0AA%20fast,%20clean,%20responsive%20Hugo%20theme.&amp;url=https://github.com/adityatelange/hugo-PaperMod&amp;hashtags=Hugo,PaperMod" target="_blank" rel="noopener noreferrer me"
+        title="Share PaperMod on X/Twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path
+        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+    </path>
+</svg>
+    </a>
+    <a href="https://ko-fi.com/adityatelange" target="_blank" rel="noopener noreferrer me"
+        title="Buy Me a Ko-Fi :)">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 23 27" preserveAspectRatio="xMidYMid meet" fill="none"
+    stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734c4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.011 3.976-4.011 3.976s-.121.119-.31.023c-.076-.057-.108-.09-.108-.09c-.443-.441-3.368-3.049-4.034-3.954c-.709-.965-1.041-2.7-.091-3.71c.951-1.01 3.005-1.086 4.363.407c0 0 1.565-1.782 3.468-.963c1.904.82 1.832 3.011.723 4.311zm6.173.478c-.928.116-1.682.028-1.682.028V7.284h1.77s1.971.551 1.971 2.638c0 1.913-.985 2.667-2.059 3.015z" />
+</svg>
+    </a>
+</div>
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

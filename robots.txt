@@ -1,3 +1,3 @@
 User-agent: *
-Disallow: /
-Sitemap: http://localhost:1313/c-modern-approach-solutions/sitemap.xml
+Disallow:
+Sitemap: https://joaonevessoares.github.io/c-modern-approach-solutions/sitemap.xml
