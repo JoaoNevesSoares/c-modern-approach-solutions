@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/c-modern-approach-solutions/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=c-modern-approach-solutions/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Chapter 2 Exercises | Solutions</title>
 <meta name="keywords" content="">
-<meta name="description" content="Solution to exercises proposed in Chapter 2 of the book">
+<meta name="description" content="Solution to exercises proposed in Chapter 2">
 <meta name="author" content="João Antonio">
-<link rel="canonical" href="https://joaonevessoares.github.io/c-modern-approach-solutions/posts/chapter2/">
+<link rel="canonical" href="http://localhost:1313/c-modern-approach-solutions/posts/chapter2/">
 <link crossorigin="anonymous" href="/c-modern-approach-solutions/assets/css/stylesheet.cbf778875b2520c1130b25f85652936aeaf33fe5f0a6c90ff9a2abeba292e86a.css" integrity="sha256-y/d4h1slIMETCyX4VlKTaurzP&#43;XwpskP&#43;aKr66KS6Go=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://joaonevessoares.github.io/c-modern-approach-solutions/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://joaonevessoares.github.io/c-modern-approach-solutions/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://joaonevessoares.github.io/c-modern-approach-solutions/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://joaonevessoares.github.io/c-modern-approach-solutions/apple-touch-icon.png">
-<link rel="mask-icon" href="https://joaonevessoares.github.io/c-modern-approach-solutions/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/c-modern-approach-solutions/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/c-modern-approach-solutions/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/c-modern-approach-solutions/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/c-modern-approach-solutions/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/c-modern-approach-solutions/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://joaonevessoares.github.io/c-modern-approach-solutions/posts/chapter2/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/c-modern-approach-solutions/posts/chapter2/">
 <noscript>
     <style>
         #theme-toggle,
@@ -55,73 +55,7 @@
         }
 
     </style>
-</noscript><meta property="og:url" content="https://joaonevessoares.github.io/c-modern-approach-solutions/posts/chapter2/">
-  <meta property="og:site_name" content="Solutions">
-  <meta property="og:title" content="Chapter 2 Exercises">
-  <meta property="og:description" content="Solution to exercises proposed in Chapter 2 of the book">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-05-12T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-05-12T00:00:00+00:00">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 2 Exercises">
-<meta name="twitter:description" content="Solution to exercises proposed in Chapter 2 of the book">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://joaonevessoares.github.io/c-modern-approach-solutions/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Chapter 2 Exercises",
-      "item": "https://joaonevessoares.github.io/c-modern-approach-solutions/posts/chapter2/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Chapter 2 Exercises",
-  "name": "Chapter 2 Exercises",
-  "description": "Solution to exercises proposed in Chapter 2 of the book",
-  "keywords": [
-    
-  ],
-  "articleBody": " Create and run Kernighan and Ritchie’s famous “hello, world” program: #include int main(void) { printf(\"hello, world\\n\"); } Do you get a warning message from the compiler? If so, what’s needed to make it go away?\nANS:\nTo reproduce this exercise you need create a new file and name it with .c extension. In the same directory the file is, you compile the program with gcc (if using GNU linux, or find the compiler available for your system.) open the terminal emulator and run the following line to compile the program: gcc hello.c, to execute run: ./a.out. Author’s asks about if we gat some warning message from the compiler, this is because in some older compilers, left the main function without a return statement make throw a warning. As using modern compilers such Clang, there’s no warning message, as long as main has iint as its return type.\nAccording to the C standard (since C99):\nIf control reaches the end of main() without a return statement, the effect is as if return 0; had been executed.\nIn some older compilers there’s a warning that appears when running the program without the return statement.\n",
-  "wordCount" : "193",
-  "inLanguage": "en",
-  "datePublished": "2025-05-12T00:00:00Z",
-  "dateModified": "2025-05-12T00:00:00Z",
-  "author":{
-    "@type": "Person",
-    "name": "João Antonio"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://joaonevessoares.github.io/c-modern-approach-solutions/posts/chapter2/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Solutions",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://joaonevessoares.github.io/c-modern-approach-solutions/favicon.ico"
-    }
-  }
-}
-</script>
+</noscript>
 </head>
 
 <body class="" id="top">
@@ -139,7 +73,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://joaonevessoares.github.io/c-modern-approach-solutions/" accesskey="h" title="Solutions (Alt + H)">Solutions</a>
+            <a href="http://localhost:1313/c-modern-approach-solutions/" accesskey="h" title="Solutions (Alt + H)">Solutions</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -165,17 +99,17 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://joaonevessoares.github.io/c-modern-approach-solutions/archives" title="Archive">
+                <a href="http://localhost:1313/c-modern-approach-solutions/archives" title="Archive">
                     <span>Archive</span>
                 </a>
             </li>
             <li>
-                <a href="https://joaonevessoares.github.io/c-modern-approach-solutions/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:1313/c-modern-approach-solutions/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
             <li>
-                <a href="https://joaonevessoares.github.io/c-modern-approach-solutions/tags/" title="Tags">
+                <a href="http://localhost:1313/c-modern-approach-solutions/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
@@ -224,29 +158,339 @@
       Chapter 2 Exercises
     </h1>
     <div class="post-description">
-      Solution to exercises proposed in Chapter 2 of the book
+      Solution to exercises proposed in Chapter 2
     </div>
-    <div class="post-meta"><span title='2025-05-12 00:00:00 +0000 UTC'>May 12, 2025</span>&nbsp;·&nbsp;João Antonio
+    <div class="post-meta"><span title='2025-05-28 00:00:00 +0000 UTC'>May 28, 2025</span>&nbsp;·&nbsp;João Antonio
 
 </div>
-  </header> 
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
 
-  <div class="post-content"><ol>
-<li>Create and run Kernighan and Ritchie’s famous “hello, world” program:</li>
-</ol>
+        <div class="inner"><ul>
+                <li>
+                    <a href="#chapter-2" aria-label="Chapter 2">Chapter 2</a><ul>
+                        
+                <li>
+                    <a href="#programming-projects" aria-label="Programming Projects">Programming Projects</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="chapter-2">Chapter 2<a hidden class="anchor" aria-hidden="true" href="#chapter-2">#</a></h1>
+<p><strong>1</strong>. Create and run Kernighan and Ritchie’s famous “hello, world” program:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;hello, world</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>Do you get a warning message from the compiler? If so, what’s needed to make it go away?</p>
-<p><strong>ANS</strong>:</p>
+<hr>
+<p><strong>Solution</strong>:</p>
 <p>To reproduce this exercise you need create a new file and name it with <code>.c</code> extension. In the same directory the file is, you compile the program with gcc (if using GNU linux, or find the compiler available for your system.) open the terminal emulator and run the following line to compile the program: <code>gcc hello.c</code>, to execute run: <code>./a.out</code>. Author&rsquo;s asks about if we gat some warning message from the compiler, this is because in some older compilers, left the main function without a return statement make throw a warning. As using modern compilers such Clang, there&rsquo;s no warning message, as long as main has iint as its return type.</p>
 <p>According to the <strong>C standard (since C99)</strong>:</p>
 <blockquote>
 <p>If control reaches the end of main() <strong>without a return statement</strong>, the effect is <strong>as if return 0; had been executed</strong>.</p></blockquote>
 <p>In some older compilers there&rsquo;s a warning that appears when running the program without the <code>return</code> statement.</p>
-
+<hr>
+<p><strong>2</strong>. Consider the following program:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Parkinson&#39;s Law:</span><span class="se">\n</span><span class="s">Work expands so as to &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;fill the time</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;available for its completion.</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>(a) Identify the directives and statements in this program.
+<strong>Solution</strong>:</p>
+<ul>
+<li><strong>Directives</strong>: Instructions to the preprocessor, usually starting with <code>#</code>. In this program the only directive is <code>#include &lt;stdio.h&gt;</code></li>
+<li><strong>Statement</strong>: Instructions that the program executes, typically ending with a semicolon.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">	<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Parkinson&#39;s Law:</span><span class="se">\n</span><span class="s">Work expands so as to &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;fill the time</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;available for its completion.</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span></code></pre></div><p>(b) What out put does the program produce?
+<strong>Solution</strong>:
+The program will output the following message:</p>
+<blockquote>
+<p><em>Parkinson&rsquo;s Law:
+Work expands so as to fill the time
+available for its completion.</em></p></blockquote>
+<hr>
+<p><strong>3</strong>. Condense the <code>dweight.c</code> program by (1) replacing the assignments to <code>height</code>, <code>length</code>, and <code>width</code> with initializers and (2) removing the weight variable, instead calculating (volume + 165) / 166 within the last printf.</p>
+<p><em>dweight.c</em>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">height</span><span class="p">,</span> <span class="n">length</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">volume</span><span class="p">,</span> <span class="n">weight</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">height</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">length</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">width</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">volume</span> <span class="o">=</span> <span class="n">height</span> <span class="o">*</span> <span class="n">length</span> <span class="o">*</span> <span class="n">width</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">weight</span> <span class="o">=</span> <span class="p">(</span><span class="n">volume</span> <span class="o">+</span> <span class="mi">165</span><span class="p">)</span> <span class="o">/</span> <span class="mi">166</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Dimensions: %dx%dx%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">length</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Volume (cubic inches): %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">volume</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Dimensional weight (pounds): %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">weight</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p><strong>Solution</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">height</span> <span class="o">=</span> <span class="mi">8</span><span class="p">,</span> <span class="n">length</span> <span class="o">=</span> <span class="mi">12</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">volume</span> <span class="o">=</span> <span class="n">height</span> <span class="o">*</span> <span class="n">length</span> <span class="o">*</span> <span class="n">width</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Dimensions: %dx%dx%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">length</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Volume (cubic inches): %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">volume</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Dimensional weight (pounds): %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="p">(</span><span class="n">volume</span> <span class="o">+</span> <span class="mi">165</span><span class="p">)</span> <span class="o">/</span> <span class="mi">166</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><hr>
+<p><strong>4</strong>. Write a program that declares several int and float variables—without initializing them— and then prints their values. Is there any pattern to the values? (Usually there isn’t.)</p>
+<p><strong>Solution</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Uninitialized float values: %f %f %f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Uninitialized int values: %d %d %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="p">,</span> <span class="n">z</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>There shouldn&rsquo;t be any predictable pattern to these values because they depend on the state of the memory at runtime. That means that the values are garbage values  previously in the memory location addressed by these variables.</p>
+<hr>
+<p><strong>5</strong>. Which of the following are not legal C identifiers?
+(a) 100_bottles
+(b) _100_bottles
+(c) one__hundred__bottles
+(d) bottles_by_the_hundred_</p>
+<p><strong>Solution</strong>:</p>
+<p>In C, <strong>identifiers</strong> (names for variables, functions, etc.) must follow these rules:</p>
+<ul>
+<li>They can <strong>only contain</strong> letters (A-Z or a-z), digits (0-9), and underscores (_).</li>
+<li>They <strong>must not begin with a digit</strong>.</li>
+<li>They <strong>cannot be a reserved keyword</strong>, though that’s not relevant here.
+Evaluating the options we have that: <strong>(a)</strong> is a <strong>illegal identifier</strong>.</li>
+</ul>
+<hr>
+<p><strong>6</strong>. Why is it not a good idea for an identifier to contain more than one adjacent underscore (as in current___balance, for example)?</p>
+<p><strong>Solution</strong>:</p>
+<p>That&rsquo;s because the C standard (ISO C) reserves identifiers with double underscores (<code>__</code>) for the compiler and standard library.</p>
+<hr>
+<p><strong>7</strong>. Which of the following are keywords in C?
+1. (a) for
+2. (b) If
+3. (c) main
+4. (d) printf
+5. (e) while</p>
+<p><strong>Solution</strong>:
+Options: (a), (c) and (e)</p>
+<hr>
+<p><strong>8</strong>. How many tokens are there in the following statement? <code>answer=(3*q-p*p)/3;</code></p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li><code>answer</code></li>
+<li><code>=</code></li>
+<li><code>(</code></li>
+<li><code>3</code></li>
+<li><code>*</code></li>
+<li><code>q</code></li>
+<li><code>-</code></li>
+<li><code>p</code></li>
+<li><code>*</code></li>
+<li><code>p</code></li>
+<li><code>)</code></li>
+<li><code>/</code></li>
+<li><code>3</code></li>
+<li><code>;</code></li>
+</ul>
+<p><strong>14 tokens</strong> in total.</p>
+<hr>
+<p><strong>9</strong>. Insert spaces between the tokens in Exercise 8 to make the statement easier to read.</p>
+<p><strong>Solution</strong>:
+<code>anwser = ( 3 * q - p * p ) / 3;</code></p>
+<hr>
+<p><strong>10</strong>. In the dweight.c program (Section 2.4), which spaces are essential?</p>
+<p><strong>Solution</strong>:
+The only space needed is for the directive <code>#include</code> that needs a new line.</p>
+<hr>
+<h2 id="programming-projects">Programming Projects<a hidden class="anchor" aria-hidden="true" href="#programming-projects">#</a></h2>
+<p><strong>1</strong>. Write a program that uses printf to display the following pattern on the screen:</p>
+<pre tabindex="0"><code>             *
+           *
+         *
+*      *
+ *   *
+   *
+</code></pre><p><strong>Solution</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;        *</span><span class="se">\n</span><span class="s">       *</span><span class="se">\n</span><span class="s">      *</span><span class="se">\n</span><span class="s">     *</span><span class="se">\n</span><span class="s">*   *</span><span class="se">\n</span><span class="s"> * *</span><span class="se">\n</span><span class="s">  *</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><hr>
+<p><strong>2</strong>. Write a program that computes the volume of a sphere with a 10-meter radius, using the formula $v = \frac{4}{3}πr3$. Write the fraction $\frac{4}{3}$ as 4.0f/3.0f. (Try writing it as 4/3. What happens?) Hint: C doesn’t have an exponentiation operator, so you’ll need to multiply r by itself twice to compute r3.</p>
+<p><strong>Solution</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="cp">#define PI 3.14159265364
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define SPHERE_VOLUME(v) ( (4.0f/3.0f) * PI * (v * v * v))
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Sphere volume = %.2f</span><span class="se">\n</span><span class="s"> m³&#34;</span><span class="p">,</span> <span class="nf">SPHERE_VOLUME</span><span class="p">(</span><span class="mf">10.00</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>When 4/3 instead of 4.0/3.0f what happens is a integer division which evaluates to 1. That means the fractional part is discarded), not 1.3333&hellip;.
+Making at least one operand as float, forces the compiler to generate the expression as floating-point division.</p>
+<hr>
+<p><strong>3</strong>. Modify the program of Programming Project 2 so that it prompts the user to enter the radius of the sphere.</p>
+<p><strong>Solution</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="cp">#define PI 3.14159265364
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define SPHERE_VOLUME(v) ((4.0f/3.0f)*PI*(v*v*v))
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">float</span> <span class="n">radius</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%f&#34;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">radius</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;sphere volume = %.2f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="nf">SPHERE_VOLUME</span><span class="p">(</span><span class="n">radius</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><hr>
+<p><strong>4</strong>. Write a program that asks the user to enter a dollars-and-cents amount, then displays the amount with 5% tax added:</p>
+<pre tabindex="0"><code>Enter an amount: 100.00 
+With tax added: $105.00
+</code></pre><p><strong>Solution</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="kt">float</span> <span class="n">amount</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Enter an amount: &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%f&#34;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">amount</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">amount</span> <span class="o">+=</span> <span class="n">amount</span><span class="o">*</span><span class="mf">0.05f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;With tax added: %.2f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">amount</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><hr>
+<p><strong>5</strong>. Write a program that asks the user to enter a value for x and then displays the value of the following polynomial:
+$3x^5 + 2x^4 -5x^3 -x^2 + 7x - 6$
+<em>Hint</em>: C doesn&rsquo;t have an exponentiation operator, so you&rsquo;ll need to multiply $x$ by itself repeatedly in order to compute the power of $x$. (For example, x*x*x is x cubed.)</p>
+<p><strong>Solution</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="cp">#define f(x) ((3*(x*x*x*x*x)) + (2*(x*x*x*x)) - (5*(x*x*x)) - (x*x) + (7*x) - 6)
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">x</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Enter a value for x: &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">x</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;f(%d) = %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><hr>
+<p><strong>6</strong>. Modify the program of Programming Project 5 so that the polynomial is evaluated using the following formula:
+$((((3x + 2)x – 5)x – 1)x + 7)x – 6$
+Note that the modified program performs fewer multiplications. This technique for evaluating polynomials is known as [[Horner&rsquo;s method]].</p>
+<p><strong>Solution</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define f(x) (((((3*x+2)*x - 5)*x -1)*x + 7)*x - 6)
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">x</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Enter a value for x: &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;f(%d) = %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span><span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><hr>
+<p><strong>7</strong>. Write a program that asks the user to enter a U.S. dollar amount and then shows how to pay that amount using the smallest number of $20, $10, $5, and $1 bills:</p>
+<pre tabindex="0"><code>Enter a dollar amount: 93
+$20 bills: 4
+$10 bills: 1
+$5 bills: 0
+$1 bills: 3
+</code></pre><p><em>Hint</em>: Divide the amount by 20 to determine the number of $20 bills needed, and then reduce the amount by the total value of the $20 bills. Repeat for the other bill sizes. Be sure to use integer values throughout, not floating-point numbers.</p>
+<p><strong>Solution</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">amount</span><span class="p">,</span> <span class="n">remaining</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">twenties</span><span class="p">,</span> <span class="n">tens</span><span class="p">,</span> <span class="n">fives</span><span class="p">,</span> <span class="n">ones</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Enter a dollar amount: &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">amount</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">twenties</span> <span class="o">=</span> <span class="n">amount</span> <span class="o">/</span> <span class="mi">20</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">remaining</span> <span class="o">=</span> <span class="n">amount</span> <span class="o">-</span> <span class="mi">20</span><span class="o">*</span><span class="n">twenties</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tens</span> <span class="o">=</span> <span class="n">remaining</span> <span class="o">/</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">remaining</span> <span class="o">=</span> <span class="n">remaining</span> <span class="o">-</span> <span class="mi">10</span><span class="o">*</span><span class="n">tens</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fives</span> <span class="o">=</span> <span class="n">remaining</span> <span class="o">/</span> <span class="mi">5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">remaining</span> <span class="o">=</span> <span class="n">remaining</span> <span class="o">-</span> <span class="mi">5</span><span class="o">*</span><span class="n">fives</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ones</span> <span class="o">=</span> <span class="n">remaining</span> <span class="o">/</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;$20 bills: %d</span><span class="se">\n</span><span class="s">$10 bills: %d</span><span class="se">\n</span><span class="s">$5 bills: %d</span><span class="se">\n</span><span class="s">$1 bills: %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">notes_of_20</span><span class="p">,</span><span class="n">notes_of_10</span><span class="p">,</span><span class="n">notes_of_5</span><span class="p">,</span><span class="n">notes_of_1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><hr>
+<p><strong>8</strong>. Write a program that calculates the remaining balance on a loan after the first, second, and third monthly payments:</p>
+<pre tabindex="0"><code>   Enter amount of loan: 20000.00
+   Enter interest rate: 6.0
+   Enter monthly payment: 386.66
+   Balance remaining after first payment: $19713.34
+   Balance remaining after second payment: $19425.25
+   Balance remaining after third payment: $19135.71
+</code></pre><p>Display each balance with two digits after the decimal point. Hint: Each month, the balance is decreased by the amount of the payment, but increased by the balance times the monthly interest rate. To find the monthly interest rate, convert the interest rate entered by the user to a percentage and divide it by 12.</p>
+<p><strong>Solution</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define tax(v) ((v/100.00f) / 12.00f)
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">loan</span><span class="p">,</span> <span class="n">rate</span><span class="p">,</span> <span class="n">payment</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">balance</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Enter amount of loan: &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%lf&#34;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">loan</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Enter interest rate: &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%lf&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Enter monthly payment: &#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">scanf</span><span class="p">(</span><span class="s">&#34;%lf&#34;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">payment</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">balance</span> <span class="o">=</span> <span class="n">loan</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">balance</span> <span class="o">=</span> <span class="n">balance</span> <span class="o">+</span> <span class="p">(</span><span class="n">loan</span> <span class="o">*</span> <span class="nf">tax</span><span class="p">(</span><span class="n">rate</span><span class="p">)</span> <span class="p">)</span> <span class="o">-</span> <span class="n">payment</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Balance remaining after first payment: %.2lf</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">balance</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl">	<span class="n">balance</span> <span class="o">=</span> <span class="n">balance</span> <span class="o">+</span> <span class="p">(</span><span class="n">loan</span> <span class="o">*</span> <span class="nf">tax</span><span class="p">(</span><span class="n">rate</span><span class="p">)</span> <span class="p">)</span> <span class="o">-</span> <span class="n">payment</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Balance remaining after first payment: %.2lf</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">balance</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">balance</span> <span class="o">=</span> <span class="n">balance</span> <span class="o">+</span> <span class="p">(</span><span class="n">loan</span> <span class="o">*</span> <span class="nf">tax</span><span class="p">(</span><span class="n">rate</span><span class="p">)</span> <span class="p">)</span> <span class="o">-</span> <span class="n">payment</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Balance remaining after third payment: %.2lf</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">balance</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>
 
   </div>
 
